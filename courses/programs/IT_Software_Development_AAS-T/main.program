@@ -1,0 +1,10 @@
+{"name": "IT_Software_Development_AAS-T",
+ "requirements": [
+    ["AllOf", "ENGL& 101", "ENGL& 235", "CMST& 210", "MATH& 141", "CIS 110", "CIS 111", "CIS 155", "CIS 182", "CIS 236", "CS 110", "CIS 124", "CIS 260", "CS& 141", "CS 143", "CS 180", "CS 233", "CS 243", "CS 296"],
+    [ "Either",
+       ["AllOf", "MATH& 142", "MATH& 151"],
+       ["AllOf", "CIS 247", "CIS 249"]
+    ],
+    [ "Hours>=", 10, "BUS& 101", "PSYC& 100", "SOC& 101", "PSYC& 101"]
+ ]
+}
