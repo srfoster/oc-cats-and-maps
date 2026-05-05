@@ -109,3 +109,90 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* Basic page layout for MAP app */
+.app-root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.app-root header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Home view layout */
+.home-view {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* Login row */
+.home-login-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.home-login-label {
+  font-weight: 600;
+}
+
+.home-login-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.home-login-button {
+  padding: 0.4rem 0.9rem;
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+/* Tiles area */
+.home-tiles {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Individual tiles as big buttons */
+.home-tile {
+  width: 220px;
+  height: 260px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  font-size: 1rem;
+}
+
+.home-tile-requirements {
+  background-color: #f9ff7a; /* yellow tile */
+}
+
+.home-tile-prereqs {
+  background-color: #b9d8ff; /* blue tile */
+}
+
+.home-tile-title {
+  text-align: center;
+  max-width: 12rem;
+}
+
+.home-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+}
